@@ -1,0 +1,57 @@
+/* index.css — Option B: no grid lines anywhere */
+
+/* page layout */
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh; 
+}
+
+/* table layout (no borders) */
+table { 
+  border-collapse: separate; 
+  border-spacing: 0;        /* adjust if you want gaps between cells */
+  margin: 0 auto;
+}
+
+th, td {
+  border: 0;
+}
+
+th {
+  width: 120px;
+  padding-top: 25px;
+  padding-bottom: 30px;
+}
+
+td { 
+  padding: 5px; 
+}
+
+/* time column */
+.time { 
+  height: 40px;
+  font-weight: 600;
+  text-align: right;
+  padding-right: 10px;
+  background: transparent; 
+}
+
+/* event cells (no border, just color fill) */
+.Event { 
+  border: 0;
+  border-radius: 8px;
+  vertical-align: top;
+}
+
+.Event h5 {
+  margin: 6px;
+  font-size: 0.95rem;
+}
+
+/* event color themes */
+.Event.green { background: #dff5e1; }  /* light green */
+.Event.blue  { background: #e0ecff; }  /* light blue */
+.Event.pink  { background: #ffe3f0; }  /* light pink */
